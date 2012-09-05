@@ -21,3 +21,4 @@ hi PmenuSel ctermbg=darkcyan ctermfg=black
 hi PmenuSbar ctermbg=darkred
 hi PmenuThumb cterm=reverse ctermfg=gray
 hi LineNr ctermfg=darkgreen ctermbg=gray
+
