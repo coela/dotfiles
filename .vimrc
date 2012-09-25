@@ -74,3 +74,4 @@ hi PmenuSbar ctermbg=darkred
 hi PmenuThumb cterm=reverse ctermfg=gray
 hi LineNr ctermfg=darkgreen ctermbg=gray
 
+au BufNewFile,BufRead *.psgi set filetype=perl
