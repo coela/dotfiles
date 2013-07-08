@@ -33,14 +33,22 @@ NeoBundle 'teramako/jscomplete-vim'
 NeoBundle 'glidenote/memolist.vim'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'glidenote/octoeditor.vim'
 
 " vim-scripts repos
 NeoBundle 'L9'
 NeoBundle 'FuzzyFinder'
 NeoBundle 'JavaScript-syntax'
 NeoBundle 'ctrlp.vim'
+NeoBundle 'quickrun.vim'
+NeoBundle 'Markdown'
 " non github repos
 NeoBundle 'git://git.wincent.com/command-t.git'
+
+"octopress settings
+let g:octopress_path = '~/projects/octopress'
+let g:memolist_path = '~/projects/lab_notebook/source/_posts'
+
 " ...
 filetype plugin indent on     " required!
 
@@ -57,6 +65,7 @@ augroup greopen
 augroup end
 
 au QuickfixCmdPost make,grep,greoadd,vimgrep copen
+au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
 set enc=utf-8
 set fenc=utf-8
@@ -75,3 +84,5 @@ hi PmenuThumb cterm=reverse ctermfg=gray
 hi LineNr ctermfg=darkgreen ctermbg=gray
 
 au BufNewFile,BufRead *.psgi set filetype=perl
+
+
